@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        border: 2px solid teal;
+        width: 320px;
+        height: 320px;
+        overflow: hidden;
+      }
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <!-- <img src="./img/img_adapt/1000.jpg" class="desctop" alt="" />
+      <img src="./img/img_adapt/760.jpg" class="tablet" alt="" />
+      <img src="./img/img_adapt/480.jpeg" class="mobile" alt="" /> -->
+      <picture>
+        <source srcset="./img/img_adapt/480.jpeg" media="(max-width:430px)" />
+        <source srcset="./img/img_adapt/760.jpg" media="(max-width:768px)" />
+        <img src="./img/img_adapt/1000.jpg" alt="" />
+      </picture>
+      <!-- <img src="./img/img_adapt/1000.jpg" srcset="./img/img_adapt/760.jpg 2x, ./img/img_adapt/480.jpeg 2x"> -->
+    </div>
+  </body>
+</html>
